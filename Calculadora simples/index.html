@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="calculadora">
+
+   <h1>Calculadora Simples</h1>
+
+    <input type="text"  id="valor"  placeholder="Resultado" >
+    <input type="number"  id="number1" placeholder="Digite o valor 1">
+    <input type="number" id="number2"  placeholder="Digite o valor 2">
+
+        <div class="botoes">
+         <button class="soma" onclick="soma()">+</button>
+         <button class="subs" onclick="subs()">-</button>
+         <button class="mult" onclick="mult()">*</button>
+         <button class="div" onclick="div()">/</button>
+         <button class="limpa" onclick="limpa()">C</button>
+        </div> 
+         <script>
+          function soma(){
+            let num1 = parseFloat(document.getElementById("number1").value);
+            let num2 = parseFloat(document.getElementById("number2").value);
+
+            let soma = (num1 + num2)
+
+            document.getElementById("valor").value = (soma)
+          }
+          function subs(){
+            let num1 = parseFloat(document.getElementById("number1").value);
+            let num2 = parseFloat(document.getElementById("number2").value);
+
+            let subs = (num1 - num2)
+
+            document.getElementById("valor").value = (subs)
+          }
+          function mult(){
+            let num1 = parseFloat(document.getElementById("number1").value);
+            let num2 = parseFloat(document.getElementById("number2").value);
+
+            let mult = (num1 * num2)
+
+            document.getElementById("valor").value = (mult)
+          }
+          function div(){
+            let num1 = parseFloat(document.getElementById("number1").value);
+            let num2 = parseFloat(document.getElementById("number2").value);
+
+            let div = (num1 / num2)
+
+            document.getElementById("valor").value = (div)
+          }
+          function limpa(){
+            document.getElementById("valor").value = ""
+          }
+         </script>
+
+
+    </div>
+
+ 
+
+
+
+</body>
+</html>

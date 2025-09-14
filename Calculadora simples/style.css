@@ -1,0 +1,52 @@
+body {
+   display: flex;
+   justify-content: center; /* centraliza horizontal */
+   align-items: center;     /* centraliza vertical */
+   height: 100vh;           /* ocupa a tela inteira */
+   margin: 0;
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* força centralizar tudo dentro */
+    width: 350px;
+    height: 300px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px;
+    padding-top: 40px;
+}
+
+.calculadora button {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+
+    display: flex;              
+    align-items: center;        
+    justify-content: center;    
+    font-size: 18px;            
+    padding: 0;                 
+    box-sizing: border-box;
+}
+
+input {
+    margin: 7px;
+    text-align: center; /* deixa o texto digitado centralizado */
+    border-radius: 5px;
+    border-style: inset;
+}
+
+h1{
+    border-bottom: 2px solid purple;
+    border-radius:1px;
+    margin: 6px;
+    margin-bottom: 3px;
+}
+
+.botoes{
+    display: grid;
+    grid-template-columns: repeat(5, 50px); 
+    gap: 1px;
+}
