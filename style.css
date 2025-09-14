@@ -1,0 +1,58 @@
+body {
+   display: flex;
+   justify-content: center; /* centraliza horizontal */
+   align-items: center;     /* centraliza vertical */
+   height: 100vh;           /* ocupa a tela inteira */
+   margin: 0;
+   background-color: rgb(146, 148, 148);
+}
+
+.container{
+    background: linear-gradient(to bottom, rgb(44, 44, 44), rgb(24, 24, 23));
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.numeros {
+  display: grid;
+  grid-template-columns: repeat(4, 90px); /* 4 colunas de 60px fixos */
+  grid-auto-rows: 60px; /* altura fixa de cada linha */
+  gap: 10px; /* espaço entre os botões */
+}
+
+#zero{
+    grid-column: span 2;
+    
+}
+.numeros button {
+  width: 100%;   /* ocupa toda a largura da célula */
+  height: 100%;  /* ocupa toda a altura da célula */
+}
+
+#resultado {
+    width: 389px;          /* largura da calculadora */
+    height: 70px;          /* altura do display */
+    border-radius: 7px;
+    border: none;
+    background-color: black;
+    color: white;
+    text-align: right;     /* ou left se quiser à esquerda */
+    font-size: 50px;
+    padding: 0 1px;       /* pequeno padding interno */
+    line-height: 60px;     /* centraliza verticalmente */
+    margin-bottom: 9px;
+}
+
+button{
+    background: linear-gradient(to bottom, rgb(61, 59, 59), rgb(68, 67, 67));
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, rgb(48, 48, 48), rgb(39, 39, 39));
+}
